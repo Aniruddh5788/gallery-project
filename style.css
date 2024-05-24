@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border border-box;
+}
+.container{
+    width: 100%;
+    height: auto;
+    background-color: skyblue;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    
+}
+.box{
+    width: 400px;
+    height: 200px;
+    background-color: gray; 
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 20px;
+}
+.box{
+    background-size: cover;
+    background-position: center;
+}
+.box:first-child{
+    background-image: url("https://source.unsplash.com/random/?train")
+    ;
+}
+.box:nth-child(2){
+    background-image: url("https://source.unsplash.com/random/?car")
+    ;
+}
+.box:nth-child(3){
+    background-image: url("https://source.unsplash.com/random/?teddybear")
+    ;
+}
+.box:nth-child(4){
+    background-image: url("https://source.unsplash.com/random/?swimming")
+    ;
+}
+.box:nth-child(5){
+    background-image: url("https://source.unsplash.com/random/?rainbow")
+    ;
+}
+.box:nth-child(6){
+    background-image: url("https://source.unsplash.com/random/?cricket")
+    ;
+}
+.box:nth-child(7){
+    background-image: url("https://source.unsplash.com/random/?food")
+    ;
+}
+.box:nth-child(8){
+    background-image: url("https://source.unsplash.com/random/?engineer")
+    ;
+}
+.box:last-child{
+    background-image: url("https://source.unsplash.com/random/?novels")
+    ;
+}
+.box:hover{
+    transition: all ease-in-out 3s;
+    filter: brightness(30%);
+}
+
+@media (max-width: 768px) {
+
+    .container{
+        width: 100%;
+        height: auto;
+        padding-block: 40px;
+    }
+  .box{
+    width: 350px;
+    height: 400px;
+    margin-top: 20px;
+  }
+
+
+}
+
+
+
+
+
